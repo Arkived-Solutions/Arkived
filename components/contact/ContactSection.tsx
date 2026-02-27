@@ -44,7 +44,7 @@ export default function ContactSection() {
                                 <ExternalLink size={14} className="text-[#8A96B8] group-hover:text-[#1877F2] transition-colors" />
                             </div>
                             <div className="text-[#8A96B8] text-sm font-[var(--font-inter)]">
-                                facebook.com/arkived · Follow us for updates
+                                facebook.com/arkivedsolutions · Follow us for updates
                             </div>
                         </div>
 
