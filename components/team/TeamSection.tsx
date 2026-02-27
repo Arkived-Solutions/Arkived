@@ -27,7 +27,7 @@ const team: TeamMember[] = [
         name: "Rhandie Sales Jr.",
         role: "Lead Developer",
         bio: "Rhandie J. Sales Jr. is a Beta Microsoft Student Ambassador from the Philippines and a full-stack cloud-native developer specializing in Next.js, TypeScript, and Express.js. He focuses on writing clean, maintainable code and building scalable web applications, while working with cloud and AI technologies in practical projects. He serves in tech leadership roles within the Microsoft Student Community, Google Developer Groups, and AWS Cloud Clubs, and is part of the StellarPH100, recognizing the country’s greatest minds under 30.",
-        avatar: "/team/rhandie.jfif",
+        avatar: "/team/rhandie.png",
         socials: [
             { icon: Facebook, href: "https://www.facebook.com/rhandie.sales.1", label: "Facebook" },
             { icon: Linkedin, href: "https://www.linkedin.com/in/rhandie-sales/", label: "LinkedIn" },
@@ -39,7 +39,7 @@ const team: TeamMember[] = [
         name: "Donna Rachel Reymatias",
         role: "UI/UX Developer",
         bio: "Donna Rachel N. Reymatias is a UI/UX Developer specializing in user-centered design, utilizing Figma to build intuitive and impactful digital systems. With knowledge in frontend development, she helps bridge the gap between design and implementation. Beyond development, she serves as a marketing assistant for the Microsoft Student Community, where she helps in planning and execution.",
-        avatar: "/team/donna.jfif",
+        avatar: "/team/donna.png",
         socials: [
             { icon: Facebook, href: "https://www.facebook.com/donnareymatias", label: "Facebook" },
             { icon: Linkedin, href: "https://www.linkedin.com/in/donna-r-0a6263291/", label: "LinkedIn" },
@@ -52,7 +52,7 @@ const team: TeamMember[] = [
         role: "Backend Developer",
         bio:
             "A dedicated Information Technology student at the Polytechnic University of the Philippines - Manila, Kerby balances a rigorous academic path with his role as IT Support Co-Lead for the Microsoft Student Community. He is a technical enthusiast with a deep interest in database design, web development, and data management, focusing on building efficient, scalable digital solutions. Beyond the screen, he is an avid strength training and bodybuilding enthusiast, applying a disciplined and analytical approach to physical performance and personal growth.",
-        avatar: "/team/kerby.jfif",
+        avatar: "/team/kerby.png",
         socials: [
             { icon: Facebook, href: "https://www.facebook.com/krby.crr/", label: "Facebook" },
             { icon: Linkedin, href: "https://www.linkedin.com/in/kerby-bryan-correa-1ba743307/", label: "LinkedIn" },
@@ -65,7 +65,7 @@ const team: TeamMember[] = [
         role: "Project Manager",
         bio:
             "Akisha Lei de Castro is a 3rd Year BS in Information Technology student at the Polytechnic University of the Philippines specializing in UI/UX design and Marketing Technology. She currently applies her technical and creative expertise as a Marketing Associate for the AWS Cloud Club PUP, the PUP Microsoft Student Community, and JBEC PUP.",
-        avatar: "/team/akisha.jfif",
+        avatar: "/team/akisha.png",
         socials: [
             { icon: Facebook, href: "https://www.facebook.com/akidcstro", label: "Facebook" },
             { icon: Linkedin, href: "https://www.linkedin.com/in/akisha-lei-de-castro-96bba92aa/", label: "LinkedIn" },
@@ -110,6 +110,7 @@ function TeamCard({ member, delay }: { member: TeamMember; delay: number }) {
                                     height={80}
                                     onError={() => setImgError(true)}
                                     className="w-full h-full object-cover object-center"
+                                    unoptimized
                                 />
                             ) : (
                                 <span className="font-[var(--font-space-grotesk)] font-bold text-2xl text-[#EEF0F7]">
