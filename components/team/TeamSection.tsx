@@ -110,6 +110,7 @@ function TeamCard({ member, delay }: { member: TeamMember; delay: number }) {
                                     height={80}
                                     onError={() => setImgError(true)}
                                     className="w-full h-full object-cover object-center"
+                                    unoptimized
                                 />
                             ) : (
                                 <span className="font-[var(--font-space-grotesk)] font-bold text-2xl text-[#EEF0F7]">
