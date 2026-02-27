@@ -10,58 +10,63 @@ export default function Footer() {
         <footer className="bg-[#0E1220] border-t border-[#3D4F7C]/30">
 
             {/* Main footer body */}
-            <div className="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+            <div className="max-w-6xl mx-auto px-6 py-16 flex flex-col sm:flex-row items-start justify-between gap-12">
 
-                {/* Column 1 — Brand */}
-                <div className="flex flex-col gap-4">
+                {/* Left — Brand */}
+                <div className="flex flex-col gap-4 max-w-[300px]">
                     <span className="font-[var(--font-space-grotesk)] font-bold text-[#EEF0F7] text-xl tracking-tight">
                         Arkived Solutions
                     </span>
-                    <p className="text-[#8A96B8] text-sm leading-relaxed font-[var(--font-inter)] max-w-[260px]">
+                    <p className="text-[#8A96B8] text-sm leading-relaxed font-[var(--font-inter)]">
                         A software solutions team from PUP — building web apps, mobile apps, and API-driven digital experiences.
                     </p>
                     {/* Accent line */}
                     <div className="w-10 h-0.5 bg-[#E8A87C]/60 rounded-full" />
                 </div>
 
-                {/* Column 2 — Navigation */}
-                <div className="flex flex-col gap-4">
-                    <p className="text-xs font-semibold tracking-widest uppercase text-[#E8A87C] font-[var(--font-inter)]">
-                        Navigation
-                    </p>
-                    <nav className="flex flex-col gap-3">
-                        {navLinks.map((link) => (
+                {/* Right — Navigation + Connect */}
+                <div className="flex flex-row gap-16">
+
+                    {/* Navigation */}
+                    <div className="flex flex-col gap-4">
+                        <p className="text-xs font-semibold tracking-widest uppercase text-[#E8A87C] font-[var(--font-inter)]">
+                            Navigation
+                        </p>
+                        <nav className="flex flex-col gap-3">
+                            {navLinks.map((link) => (
+                                <a
+                                    key={link.href}
+                                    href={link.href}
+                                    className="text-sm text-[#8A96B8] hover:text-[#EEF0F7] transition-colors duration-200 font-[var(--font-inter)] w-fit"
+                                >
+                                    {link.label}
+                                </a>
+                            ))}
+                        </nav>
+                    </div>
+
+                    {/* Connect */}
+                    <div className="flex flex-col gap-4">
+                        <p className="text-xs font-semibold tracking-widest uppercase text-[#E8A87C] font-[var(--font-inter)]">
+                            Connect
+                        </p>
+                        <div className="flex flex-col gap-3">
                             <a
-                                key={link.href}
-                                href={link.href}
+                                href="https://www.facebook.com/profile.php?id=61564503124354"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="text-sm text-[#8A96B8] hover:text-[#EEF0F7] transition-colors duration-200 font-[var(--font-inter)] w-fit"
                             >
-                                {link.label}
+                                Facebook Page
                             </a>
-                        ))}
-                    </nav>
-                </div>
-
-                {/* Column 3 — Connect */}
-                <div className="flex flex-col gap-4">
-                    <p className="text-xs font-semibold tracking-widest uppercase text-[#E8A87C] font-[var(--font-inter)]">
-                        Connect
-                    </p>
-                    <div className="flex flex-col gap-3">
-                        <a
-                            href="https://www.facebook.com/profile.php?id=61564503124354"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-sm text-[#8A96B8] hover:text-[#EEF0F7] transition-colors duration-200 font-[var(--font-inter)] w-fit"
-                        >
-                            Facebook Page
-                        </a>
-                        <p className="text-sm text-[#8A96B8] font-[var(--font-inter)]">
-                            Polytechnic University
-                            <br />
-                            of the Philippines
-                        </p>
+                            <p className="text-sm text-[#8A96B8] font-[var(--font-inter)]">
+                                Polytechnic University
+                                <br />
+                                of the Philippines
+                            </p>
+                        </div>
                     </div>
+
                 </div>
             </div>
 
