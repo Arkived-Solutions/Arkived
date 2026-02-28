@@ -17,7 +17,7 @@ const skills = [
     { icon: Globe, label: "Next.js & React", desc: "Modern full-stack web apps" },
     { icon: Layout, label: "Tailwind CSS", desc: "Utility-first responsive design" },
     { icon: Code2, label: "TypeScript", desc: "Type-safe scalable codebases" },
-    { icon: Database, label: "Node.js & REST APIs", desc: "Backend services & integrations" },
+    { icon: Database, label: "Node.js, Express.js & REST APIs", desc: "Backend services & integrations" },
     { icon: Smartphone, label: "React Native", desc: "Cross-platform mobile apps" },
     { icon: Sparkles, label: "UI/UX Principles", desc: "Accessible, beautiful interfaces" },
 ];
