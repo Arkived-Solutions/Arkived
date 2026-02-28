@@ -3,7 +3,10 @@
 import { useRef, useEffect, useState } from "react";
 import { motion, useInView } from "motion/react";
 import { AnimatedListItem } from "@/components/ui/magic-ui";
-import { Code2, Globe, Layout, Smartphone, Database, Sparkles } from "lucide-react";
+import {
+    NextjsIcon, NodejsIcon, TypescriptIcon,
+    SupabaseIcon, TailwindIcon, FigmaIcon,
+} from "@/components/ui/tech-icons";
 
 // Each stat: numeric value + optional suffix, label, color
 const stats = [
@@ -14,12 +17,12 @@ const stats = [
 ];
 
 const skills = [
-    { icon: Globe, label: "Next.js & React", desc: "Modern full-stack web apps" },
-    { icon: Layout, label: "Tailwind CSS", desc: "Utility-first responsive design" },
-    { icon: Code2, label: "TypeScript", desc: "Type-safe scalable codebases" },
-    { icon: Database, label: "Node.js, Express.js & REST APIs", desc: "Backend services & integrations" },
-    { icon: Smartphone, label: "React Native", desc: "Cross-platform mobile apps" },
-    { icon: Sparkles, label: "UI/UX Principles", desc: "Accessible, beautiful interfaces" },
+    { icon: NextjsIcon, label: "Next.js & React Native", desc: "Modern full-stack applications" },
+    { icon: NodejsIcon, label: "Node.js & Express.js", desc: "Custom backend services and REST APIs" },
+    { icon: TypescriptIcon, label: "TypeScript", desc: "Type-safe scalable codebases" },
+    { icon: SupabaseIcon, label: "Supabase", desc: "PostgreSQL, authentication, and realtime services" },
+    { icon: TailwindIcon, label: "Tailwind CSS", desc: "Utility-first responsive design" },
+    { icon: FigmaIcon, label: "Figma", desc: "UI design, prototyping, and handoff" },
 ];
 
 // Count-up hook: animates 0 → target when the element enters the viewport
@@ -125,8 +128,8 @@ export default function AboutSection() {
                                     className="absolute inset-0 pointer-events-none opacity-[0.025]"
                                     style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E\")", backgroundSize: "128px 128px" }}
                                 />
-                                <div className="shrink-0 w-10 h-10 rounded-lg bg-[#1A1F35] flex items-center justify-center border border-[#E8A87C]/20 group-hover:border-[#E8A87C]/50 transition-colors">
-                                    <skill.icon size={18} className="text-[#E8A87C]" />
+                                <div className="shrink-0 w-10 h-10 rounded-lg bg-[#1A1F35] flex items-center justify-center border border-[#3D4F7C]/40 group-hover:border-[#E8A87C]/40 text-[#5A6485] group-hover:text-[#E8A87C] transition-all duration-300 group-hover:shadow-[0_0_14px_rgba(232,168,124,0.35)]">
+                                    <skill.icon width={20} height={20} aria-label={skill.label} />
                                 </div>
                                 <div>
                                     <div className="font-[var(--font-space-grotesk)] font-semibold text-[#EEF0F7] text-sm">{skill.label}</div>
