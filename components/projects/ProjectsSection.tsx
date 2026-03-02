@@ -25,7 +25,7 @@ const projects = [
         tags: ["Next.js", "Firebase", "Tailwind CSS"],
         live: "https://stall-mate-2025.vercel.app/",
         github: "https://github.com/Roundyy/stallmate",
-        thumbnail: "/project_thumbnails/StallMate_thumbnail.png",
+        thumbnail: "/project_thumbnails/Stallmate_thumbnail.png",
         type: "Web App",
     },
     {
