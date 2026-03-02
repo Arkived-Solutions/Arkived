@@ -33,7 +33,7 @@ const team: TeamMember[] = [
             { icon: Linkedin, href: "https://www.linkedin.com/in/rhandie-sales/", label: "LinkedIn" },
             { icon: Github, href: "https://github.com/Roundyy", label: "GitHub" },
         ],
-        resumeFile: "",
+        resumeFile: "/resume/SALES_Rhandie_Resume.pdf" ,
     },
     {
         name: "Donna Rachel Reymatias",
@@ -45,7 +45,7 @@ const team: TeamMember[] = [
             { icon: Linkedin, href: "https://www.linkedin.com/in/donna-r-0a6263291/", label: "LinkedIn" },
             { icon: Github, href: "https://github.com/drchl", label: "GitHub" },
         ],
-        resumeFile: "",
+        resumeFile: "/resume/REYMATIAS_Donna_Resume.pdf" ,
     },
     {
         name: "Kerby Bryan Correa",
@@ -58,7 +58,7 @@ const team: TeamMember[] = [
             { icon: Linkedin, href: "https://www.linkedin.com/in/kerby-bryan-correa-1ba743307/", label: "LinkedIn" },
             { icon: Github, href: "https://github.com/BryanButtowski", label: "GitHub" },
         ],
-        resumeFile: "",
+        resumeFile: "/resume/CORREA_Kerby_Resume.pdf" ,
     },
     {
         name: "Akisha Lei De Castro",
@@ -71,7 +71,7 @@ const team: TeamMember[] = [
             { icon: Linkedin, href: "https://www.linkedin.com/in/akisha-lei-de-castro-96bba92aa/", label: "LinkedIn" },
             { icon: Github, href: "https://github.com/akidcstro", label: "GitHub" },
         ],
-        resumeFile: "",
+        resumeFile: "/resume/DE CASTRO_Akisha Lei_Resume.pdf",
     },
 ];
 

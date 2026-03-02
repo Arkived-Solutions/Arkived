@@ -7,59 +7,77 @@ import Tilt from "react-parallax-tilt";
 
 const projects = [
     {
-        title: "ArkDash",
-        description:
-            "A fully responsive admin dashboard web app with real-time data visualization, dark mode, and modular components — built for SME operations.",
-        tags: ["React", "Tailwind CSS", "TypeScript"],
-        live: "https://facebook.com",
-        github: "https://github.com/Arkived-Solutions/arkdash",
-        thumbnail: "https://placehold.co/600x340/252B45/E8A87C?text=ArkDash",
+        title: "Fetch",
+        description: `a full‑stack smart lost‑and‑found system for school communities with
+            a modern interface, secure row‑level security, automated item matching, 
+            claim workflows, and real‑time notifications.`,
+        tags: ["React", "Next.js", "Tailwind CSS", "Node.js", "Express.js"],
+        live: "http://pup-fetch.vercel.app/",
+        github: "https://github.com/Roundyy/fetch",
+        thumbnail: "https://placehold.co/600x340/252B45/E8A87C?text=Fetch",
         type: "Web App",
     },
     {
-        title: "PUP Event Portal",
+        title: "StallMate",
         description:
-            "A campus event management platform for PUP students — browse, register, and get notified about university events in real time.",
-        tags: ["Next.js", "REST API", "Tailwind CSS"],
-        live: "https://facebook.com",
-        github: "https://github.com/Arkived-Solutions/pup-event-portal",
-        thumbnail: "https://placehold.co/600x340/252B45/6B7BAD?text=PUP+Event+Portal",
+            `A full‑stack smart POS and inventory management system for PUP Lagoon stalls, with  
+            AI‑driven insights and interactive dashboards to streamline operations and decision‑making.`,
+        tags: ["Next.js", "Firebase", "Tailwind CSS"],
+        live: "https://stall-mate-2025.vercel.app/",
+        github: "https://github.com/Roundyy/stallmate",
+        thumbnail: "https://placehold.co/600x340/252B45/6B7BAD?text=StallMate",
         type: "Web App",
     },
     {
-        title: "ShopLocal Mobile",
+        title: "I-70 Clinic App",
         description:
-            "A cross-platform mobile app for small local businesses — list products, manage orders, and reach customers on iOS and Android.",
-        tags: ["React Native", "Node.js", "MongoDB"],
-        live: "https://facebook.com",
-        github: "https://github.com/Arkived-Solutions/shoplocal-mobile",
-        thumbnail: "https://placehold.co/600x340/252B45/E8A87C?text=ShopLocal",
-        type: "Mobile App",
+            `A digital system for government-funded clinics that manages employee medical registrations, 
+            replacing manual I-70 forms with a normalized relational database to ensure data integrity and streamline patient information management for faster healthcare delivery.`,
+        tags: ["Java", "MySQL"],
+        live: "#",
+        github: "https://github.com/BryanButtowski/I70-CLINIC-APP",
+        thumbnail: "https://placehold.co/600x340/252B45/E8A87C?text=I-70",
+        type: "Java App",
     },
+
     {
-        title: "PayRoute API",
+        title: "Tsyek: Barangay Management System ",
         description:
-            "A secure RESTful API gateway for payment processing — handles authentication, transaction routing, and webhook notifications.",
+            "A digital solution tailored to the operational needs of barangay offices. It offers a straightforward way for barangay staff to handle inventory records, making routine tasks simpler and faster. ",
+        tags: ["Java"],
+        live: "#",
+        github: "https://github.com/drchl/Tsyek-Barangay-Inventory-Management-System",
+        thumbnail: "https://placehold.co/600x340/252B45/6B7BAD?text=Tsyek",
+        type: "Java App",
+    },
+
+    {
+        title: "MyndSave",
+        description:
+            `A comprehensive budgeting tool designed to help the user manage finances effortlessly. With 
+            features that allow users to add income, track expenses, set budget goals, and view detailed 
+            spending breakdowns by category.`,
         tags: ["Node.js", "Express", "PostgreSQL"],
-        live: "https://facebook.com",
-        github: "https://github.com/Arkived-Solutions/payroute-api",
-        thumbnail: "https://placehold.co/600x340/252B45/6B7BAD?text=PayRoute+API",
-        type: "Backend / API",
-    },
-    {
-        title: "DataViz Analytics",
-        description:
-            "A data analytics platform that ingests raw CSV or API data and renders interactive charts, reports, and exportable dashboards.",
-        tags: ["Next.js", "Chart.js", "Python"],
-        live: "https://facebook.com",
-        github: "https://github.com/Arkived-Solutions/dataviz-analytics",
-        thumbnail: "https://placehold.co/600x340/252B45/E8A87C?text=DataViz",
+        live: "#",
+        github: "#",
+        thumbnail: "https://placehold.co/600x340/252B45/E8A87C?text=MyndSave",
         type: "Web App",
     },
+    {
+        title: "PAG-IBIG System Database ",
+        description:
+            "A database system designed around the PAG-IBIG membership form to improve data organization and efficiency by eliminating redundancy and ensuring data integrity.",
+        tags: ["Next.js", "Chart.js", "Python"],
+        live: "#",
+        github: "#",
+        thumbnail: "https://placehold.co/600x340/252B45/6B7BAD?text=PAG-IBIG",
+        type: "Backend / API",
+    }
 ];
 
 const typeColor: Record<string, string> = {
     "Web App": "bg-[#6B7BAD]/20 text-[#9BADD0]",
+    "Java App": "bg-[#6B7BAD]/20 text-[#9BADD0]",
     "Mobile App": "bg-[#E8A87C]/15 text-[#E8A87C]",
     "Backend / API": "bg-[#3D4F7C]/40 text-[#8A96B8]",
 };
