@@ -14,7 +14,7 @@ const projects = [
         tags: ["React", "Next.js", "Tailwind CSS", "Node.js", "Express.js"],
         live: "http://pup-fetch.vercel.app/",
         github: "https://github.com/Roundyy/fetch",
-        thumbnail: "https://placehold.co/600x340/252B45/E8A87C?text=Fetch",
+        thumbnail: "/project_thumbnails/Fetch_thumbnail.png",
         type: "Web App",
     },
     {
@@ -25,7 +25,7 @@ const projects = [
         tags: ["Next.js", "Firebase", "Tailwind CSS"],
         live: "https://stall-mate-2025.vercel.app/",
         github: "https://github.com/Roundyy/stallmate",
-        thumbnail: "https://placehold.co/600x340/252B45/6B7BAD?text=StallMate",
+        thumbnail: "/project_thumbnails/StallMate_thumbnail.png",
         type: "Web App",
     },
     {
@@ -36,7 +36,7 @@ const projects = [
         tags: ["Java", "MySQL"],
         live: "#",
         github: "https://github.com/BryanButtowski/I70-CLINIC-APP",
-        thumbnail: "https://placehold.co/600x340/252B45/E8A87C?text=I-70",
+        thumbnail: "/project_thumbnails/I70Clinic_thumbnail.png",
         type: "Java App",
     },
 
@@ -47,7 +47,7 @@ const projects = [
         tags: ["Java"],
         live: "#",
         github: "https://github.com/drchl/Tsyek-Barangay-Inventory-Management-System",
-        thumbnail: "https://placehold.co/600x340/252B45/6B7BAD?text=Tsyek",
+        thumbnail: "/project_thumbnails/Tsyek_thumbnail.png",
         type: "Java App",
     },
 
